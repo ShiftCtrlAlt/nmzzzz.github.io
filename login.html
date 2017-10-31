@@ -5,8 +5,9 @@
   <title>Login / register material design form</title>
   
   
-	  <link rel='stylesheet prefetch' th:href="@{css/materialize.min.css}">
-      <link rel="stylesheet" th:href="@{css/login.css}">
+  <link rel='stylesheet prefetch' href='css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/login.css">
 
   
 </head>
@@ -23,7 +24,7 @@
 				<h3 class="red-text text-darken-3">Hello</h3>
 				<div class="row">
 					<div class="input-field col s12">
-						<input id="email" type="email" class="validate">
+						<input id="email" type="text" class="validate">
 						<label for="email">Email</label>
 					</div>
 				</div>
@@ -73,10 +74,10 @@
 		</form>
 	</div>
 </div>
-  <script th:src="@{jquery.min.js}"></script>
-  <script th:src="@{js/materialize.min.js}"></script>
+  <script src='js/jquery.js'></script>
+<script src='js/materialize.min.js'></script>
 
-    <script  th:src="@{js/login.js}"></script>
+    <script  src="js/login.js"></script>
 
 </body>
 </html>

@@ -6,11 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title></title>
 
-<link rel="stylesheet" type="text/css" th:href="@{css/normalize.css}" />
-<link rel="stylesheet" type="text/css" th:href="@{css/demo.css}" />
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
 
 <!--必要样式-->
-<link rel="stylesheet" type="text/css" th:href="@{css/component.css}" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
 
 <!--[if IE]>
 	<script src="js/html5.js"></script>
@@ -26,9 +26,23 @@
 		</div>
 	</div>
 </div><!-- /container -->
-<script th:src="@{js/TweenLite.min.js}"></script>
-<script th:src="@{js/EasePack.min.js}"></script>
-<script th:src="@{js/rAF.js}"></script>
-<script th:src="@{js/demo-3.js}"></script>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-3.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+	$(document).ready(function(){
+	  $(".main-title").click(function(){
+			$(".Dots").css({"width":"10000px","height":"10000px"});
+			setTimeout(function(){$(document.body).append("data")},500);
+			/*$.post("/index", function(data){
+				
+			 });*/
+		});
+
+	});
+	
+</script>
 </body>
 </html>

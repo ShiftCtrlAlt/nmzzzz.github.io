@@ -25,11 +25,11 @@
 	transition:3s;
 }
 
-
+/*
 .content:hover .Dots{
 	width: 10000px;
 	height: 10000px;
-}
+}*/
 .demo-1 .large-header {
 	background-image: url('../img/demo-1-bg.jpg');
 }
